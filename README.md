@@ -2,40 +2,89 @@
 
 ## Overview
 
-This is a Python CLI-based trading bot that places MARKET and LIMIT orders on Binance Futures Testnet.
+This is a simple Python-based CLI application that allows placing MARKET and LIMIT orders on Binance Futures Testnet.
+
+The goal of this project was to build a clean and functional trading bot with proper structure, input validation, logging, and error handling.
+
+---
 
 ## Features
 
-- Place MARKET and LIMIT orders
-- Supports BUY and SELL
-- CLI-based input
-- Input validation
-- Logging of requests, responses, and errors
-- Error handling for API and validation issues
+* Place MARKET and LIMIT orders
+* Supports both BUY and SELL
+* Command-line interface for user input
+* Input validation
+* Logging of requests, responses, and errors
+* Basic error handling for API and network issues
+
+---
+
+## Project Structure
+
+```
+trading_bot/
+
+bot/
+  client.py
+  orders.py
+  validators.py
+  logging_config.py
+  cli.py
+
+logs/
+main.py
+requirements.txt
+README.md
+```
+
+---
 
 ## Setup
 
 1. Clone the repository
+   git clone https://github.com/afisaralam07/trading-bot.git
+   cd trading-bot
 
-2. Install dependencies:
+2. Create virtual environment
+   python -m venv venv
+   venv\Scripts\activate
+
+3. Install dependencies
    pip install -r requirements.txt
 
-3. Create a `.env` file:
-   BINANCE_API_KEY=your_api_key
-   BINANCE_API_SECRET=your_api_secret
+4. Create `.env` file
+   Add your Binance Testnet API keys:
+
+BINANCE_API_KEY=your_api_key
+BINANCE_API_SECRET=your_api_secret
+
+---
 
 ## Usage
 
-### MARKET Order
-
+Market order:
 python main.py place-order BTCUSDT BUY MARKET 0.01
 
-### LIMIT Order
-
+Limit order:
 python main.py place-order BTCUSDT SELL LIMIT 0.01 --price 80000
+
+---
+
+## Logs
+
+Logs are saved in:
+logs/app.log
+
+---
 
 ## Notes
 
-- Uses Binance Futures Testnet
-- Time synchronization handled to avoid timestamp errors
-- Logs are stored in `logs/app.log`
+* This project uses Binance Futures Testnet
+* API keys are stored using environment variables
+* Time sync is handled to avoid timestamp errors
+
+---
+
+## Author
+
+Afisar Alam
