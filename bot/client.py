@@ -12,7 +12,6 @@ class BinanceFuturesClient:
     TESTNET_URL = 'https://testnet.binancefuture.com'
     
     def __init__(self):
-        # ✅ API keys load karo
         self.api_key = os.getenv('BINANCE_API_KEY')
         self.api_secret = os.getenv('BINANCE_API_SECRET')
         
@@ -20,11 +19,9 @@ class BinanceFuturesClient:
             raise ValidationError("API credentials not found. Check .env file")
         
         try:
-            # ✅ Client init
             self.client = Client(self.api_key, self.api_secret, testnet=True)
             self.client.FUTURES_URL = self.TESTNET_URL
             
-            # 🔥 Time sync fix (IMPORTANT)
             server_time = self.client.get_server_time()
             system_time = int(time.time() * 1000)
             self.client.timestamp_offset = server_time['serverTime'] - system_time
