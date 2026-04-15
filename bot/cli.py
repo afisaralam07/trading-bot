@@ -35,11 +35,11 @@ def place_order(symbol, side, order_type, quantity, price):
         result = manager.place_order(symbol, side, order_type, quantity, price)
         
         if result['success']:
-            click.echo("\\n✅ SUCCESS!")
+            click.echo("\\nSUCCESS!")
             click.echo(f"Order ID: {result['order_id']}")
             click.echo(f"Status: {result['status']}")
         else:
-            click.echo(f"\\n❌ FAILED: {result['error']}")
+            click.echo(f"\\nFAILED: {result['error']}")
             
     except Exception as e:
         click.echo(f"Error: {e}")
