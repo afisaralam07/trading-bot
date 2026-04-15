@@ -83,7 +83,6 @@ logs/app.log
 * API keys are stored using environment variables
 * Time sync is handled to avoid timestamp errors
 
----
 
 ## Author
 
