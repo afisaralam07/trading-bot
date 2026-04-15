@@ -1,0 +1,7 @@
+2026-04-14 22:07:54,066 - bot.logging_config - INFO - Binance Futures client initialized with time sync
+2026-04-14 22:07:54,067 - bot.logging_config - INFO - OrderManager initialized
+2026-04-14 22:07:57,779 - bot.logging_config - INFO - Validating inputs...
+2026-04-14 22:07:57,780 - bot.logging_config - INFO - Inputs validated: {'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'LIMIT', 'quantity': Decimal('0.01'), 'price': Decimal('60000')}
+2026-04-14 22:07:57,786 - bot.logging_config - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 60000.0, 'timeInForce': 'GTC'}
+2026-04-14 22:07:58,637 - bot.logging_config - ERROR - Binance API Error: APIError(code=-4024): Limit price can't be lower than 71452.83.
+2026-04-14 22:07:58,638 - bot.logging_config - ERROR - Order failed: APIError(code=-4024): Limit price can't be lower than 71452.83.

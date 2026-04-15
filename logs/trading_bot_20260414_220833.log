@@ -1,0 +1,6 @@
+2026-04-14 22:08:33,911 - bot.logging_config - INFO - Binance Futures client initialized with time sync
+2026-04-14 22:08:33,912 - bot.logging_config - INFO - OrderManager initialized
+2026-04-14 22:08:36,003 - bot.logging_config - INFO - Validating inputs...
+2026-04-14 22:08:36,004 - bot.logging_config - INFO - Inputs validated: {'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'LIMIT', 'quantity': Decimal('0.01'), 'price': Decimal('75000')}
+2026-04-14 22:08:36,004 - bot.logging_config - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 75000.0, 'timeInForce': 'GTC'}
+2026-04-14 22:08:36,641 - bot.logging_config - INFO - Order placed: {'orderId': 13035033330, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ckU7N47858wuK22W6CbGh9', 'price': '75000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776184723804}

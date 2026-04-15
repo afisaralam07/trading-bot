@@ -1,0 +1,7 @@
+2026-04-14 22:03:36,763 - bot.logging_config - INFO - Binance Futures client initialized with time sync
+2026-04-14 22:03:36,764 - bot.logging_config - INFO - OrderManager initialized
+2026-04-14 22:03:39,892 - bot.logging_config - INFO - Validating inputs...
+2026-04-14 22:03:39,892 - bot.logging_config - INFO - Inputs validated: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': Decimal('0.01'), 'price': None}
+2026-04-14 22:03:39,893 - bot.logging_config - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-14 22:03:40,698 - bot.logging_config - ERROR - Binance API Error: APIError(code=-1021): Timestamp for this request is outside of the recvWindow.
+2026-04-14 22:03:40,704 - bot.logging_config - ERROR - Order failed: APIError(code=-1021): Timestamp for this request is outside of the recvWindow.
